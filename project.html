@@ -1,0 +1,417 @@
+<html>
+	<head>
+	<style>
+		body{
+			background:#bab5b3;
+			margin:0;
+			padding:0;
+		}
+		#nav{
+			background:#FFFAFA;
+			height:80px;
+			width:100%;
+			display:flex;
+			margin-bottom:10px;
+			
+		  }
+		.image{
+			padding-top:20px;
+		}
+		#nav ul{
+				list-style-type:none;
+				display:flex;								
+			}
+		.search input{
+				width:800px;
+				height:50px;
+			}
+		.search input:hover{
+				background:pink;
+				border:solid 2px black;
+				
+			}
+		.prod{
+				margin-right:50px;
+		}
+		.prod:hover{
+				color:blue;
+		}
+		#main{
+			
+			background:#FFFAFA;
+			height:180px;
+			margin:10px;
+			display:flex;
+			
+		}
+		#main:hover{
+				background-image:linear-gradient(blue,white);
+		}
+		.market{
+				margin:50px;
+			}
+		.market:hover{
+				color:#FFC300 ;
+			}
+		#content{
+				
+			 	background:#FFFAFA;
+				height:290px;
+				margin:10px;
+				width:100%;
+				background-image:url('ph.webp');
+				background-repeat:no-repeat;
+				background-size:100% 100%;
+				animation-name:ani;
+				animation-duration:10s;
+				animation-timing-function:linear;
+				animation-iteration-count:infinite;
+				
+		}
+		@keyframes ani{
+				0%{background-image:url('ph.webp');
+					}
+				35%{background-image:url('pict.webp');
+					}
+				75%{background-image:url('pictu.webp');
+					}
+			}
+		#top{
+				height:360px;
+				width:1500px;
+				
+				
+		}
+		#slide1{
+				height:380px;
+				float:right;
+				width:300px;
+				
+
+			}
+		#slide{
+				background:#FFFAFA;
+				height:360px;
+				width:1190px;
+				margin-left:10px;
+				margin-bottom:10px;
+						
+		}
+		#slide h2{
+				text-transform:capitalize;
+				color:#900C3F;
+				font-family:serif;
+				font-size:15px;
+				text-align:center;
+				padding-top:9px;
+				font-style:italic;
+			}
+		#slide h2:hover{
+				font-size:25px;
+				color:#3D652D;
+			}
+		.inner{
+				height:300px;
+				width:238px;
+				border:solid 1px black;
+				float:left;
+				margin:9px;
+		   }
+		.par{
+				padding-left:10px;
+		}
+		#brand{
+				height:360px;
+				width:1480px;
+				margin:10px;
+				margin-top:20px;
+				background:#FFFAFA;
+				
+				
+				
+				
+		  }
+		#brand h3{
+				text-transform:capitalize;
+				color:#900C3F;
+				font-family:serif;
+				font-size:15px;
+				text-align:center;
+				padding-top:9px;
+				font-style:italic;
+
+				
+			}
+		#brand h3:hover{
+				font-size:20px;
+				color:#E0D04B;
+				
+			}
+		.brands{
+				height:290px;
+				width:300px;
+				float:left;
+				border:solid 1px black;
+				margin:20px;
+
+			}
+		#cont{
+				height:500px;
+				width:1490px;
+				background:#FFFAFA;
+				margin-left:10px;
+				margin-bottom:10px;
+
+		}
+		#big{
+				height:500px;
+				width:610px;
+				float:right;
+				background-image:linear-gradient(purple,white);
+				
+
+		}
+		#big img{
+				margin-right:30px;
+			}
+		#big img:hover{
+					border-radius:50%;
+			    }
+		
+		#side{
+				height:480px;
+				width:880px;
+				background:#FFFAFA;
+				margin-left:10px;
+				margin-right:10px;
+				padding-top:20px;
+				
+
+		}
+		
+		.dress{
+				height:200px;
+				width:850px;
+				background:#FFFAFA;
+				border:solid 1px black;
+				
+				margin-bottom:20px;
+
+		}
+		.dress1{
+				height:220px;
+				width:850px;
+				border:solid 1px black;
+				
+			}
+		#footer{
+				height:600px;
+				background:#0E0E0E;
+				display:flex;
+				color:white;
+			}
+		#footer h2{
+				color:#258C81;
+				padding-left:25px;
+				padding-top:30px;
+			}
+		#footer h2:hover{
+					color:pink;
+				}
+
+		#footer ul li{
+				list-style-type:none;
+				line-height:50px;
+			}
+		.foot{
+				padding-right:50px;
+								
+		  }
+		.foot:hover{
+				color:yellow;
+				text-decoration:underline;
+			}
+	</style>
+	</head>
+	<body>
+		<div id="nav">
+			<div class="image"><img src="fll.svg"></div>
+				<ul>
+					<li class="search"><input type="text"placeholder="search for products,brands and more"></li>
+					<li class="prod"><a href="#"><img src="log.svg"title="login">login</a></li>
+					<li class="prod"><img src="cart.svg"title="cart">cart</li>
+					<li class="prod"><img src="seller.svg"title="seller">Become a seller</li>
+
+				</ul>
+		</div>
+		<div id="main">
+			
+			<div class="market"><img src="sirf.webp"title="grocessary">
+				<p>grocessary</p>
+			</div>
+			<div class="market"><img src="mobile.webp"title="mobile">
+				<p>mobile and TV</p>
+			</div>
+			<div class="market"><img src="mob.jpeg"height="60%"title="iPhones">
+				<p>iphones</p>
+			</div>
+			<div class="market"><img src="app.webp"title="TV">
+				<p>tv and applications</p>
+			</div>
+			<div class="market"><img src="sofa.webp"title="sofa">
+				<p>sofa</p>
+			</div>
+			<div class="market"><img src="beauty.webp"title="beauty products">
+				<p>beauty</p>
+			</div>
+			<div class="market"><img src="kitc.webp"title="Home and Kitchens">
+				<p>kitchen</p>
+			</div>
+
+			
+		</div>
+		<div id="content">
+			
+		</div>
+		<div id="top">
+			<div id="slide1"><img src="air.webp"width="100%"height="100%">
+			</div>
+			<div id="slide">
+				<h2>Best of electronics</h2>
+				<div class="inner"><img src="wave.jpeg">
+					<p align="center">Microwave</p>
+					<p class="par">Starting from <b>2999</b></p>
+
+				</div>
+				<div class="inner"><img src="mob.jpeg">
+					<p align="center">Mobile</p>
+					<p class="par">Starting from <b>1999</b></p>
+				</div>
+				<div class="inner"><img src="speaker.jpeg">
+					<p align="center">Speaker</p>
+					<p class="par">Starting from <b>3999</b></p>
+
+				</div>
+				<div class="inner"><img src="lap.jpeg"height="75%"width="90%">
+					<p align="center">Laptop</p>
+					<p class="par">Starting from <b>20,999</b></p>
+				</div>
+				
+
+				
+			</div>
+			
+		
+		</div>
+		<div id="brand">
+			<h3>Best of toys</h3>
+
+			<div class="brands"><img src="bab.jpeg"width="100%"height="70%">
+				<p align="center">The <b>gaming</b> toy</p>
+				<p class="par">20% off only <b>599</b> </p>
+			</div>
+			<div class="brands"><img src="jcb.jpeg">
+				<p align="center">The <b>JCB</b> toy</p>
+				<p class="par">50% off only <b>299</b> </p>
+
+			</div>
+			<div class="brands"><img src="elec.jpeg"height="75%">
+				<p align="center">The <b>electric</b> toy</p>
+				<p class="par">60% off only <b>199</b> </p>
+
+			</div>
+			<div class="brands"><img src="shop.jpeg"width="100%"height="70%">
+				<p align="center">The <b>super</b> toy</p>
+				<p class="par">30% off only <b>899</b> </p>
+
+			</div>
+			
+
+			
+			
+
+			
+		</div>
+		<div id="cont">
+			<div id="big">
+				<img src="wat.jpeg">
+				<img src="hil.jpeg">
+				<img src="gift.jpeg">
+				<img src="mug.jpeg">
+				
+				
+
+				
+			</div>
+			<div id="side">
+				<div class="dress"><img src="nail.webp"width="100%"height="100%">
+				</div>
+				<div class="dress1"><img src="prod.webp"width="100%"height="100%">
+				</div>
+				
+			</div>
+			
+
+		</div>
+		<div id="footer">
+			<div class="foot">
+
+				<h2>About</h2>
+				<ul>
+					<li>CONTACT US</li>
+					<li>ABOUT US</li>
+					<li>FLIPKART SHOPPING</li>
+					<li>CORPORATION INFORMATION</li>
+					<li>ITEMS AVAILABLE</li>
+
+
+
+
+				</ul>
+			</div>
+			
+			<div class="foot">
+				<h2>Group Companies</h2>
+				<ul>
+					<li>MYNTRA</li>
+					<li>CLEARTRIP</li>
+					<li>SHOPSY</li>
+					<li>MEESHO</li>
+					<li>PURPLE</li>
+
+
+				</ul>
+			</div>
+			<div class="foot">
+
+				<h2>Help</h2>
+				<ul>
+					<li>PAYMENTS</li>
+					<li>SHIPPING</li>
+					<li>CANCELLATION AND RETURNS</li>
+					<li>FAQ</li>
+					<li>REPORT INFRINGEMENT</li>
+
+
+				</ul>
+
+			</div>
+			<div class="foot">
+
+				<h2>Consumer Policy</h2>
+				<ul>
+					<li>SECURITY</li>
+					<li>PRIVACY</li>
+					<li>PAYMENTS</li>
+					<li>CANCELLATION AND RETURNS</li>
+					<li>TERMS OF USE</li>
+
+
+				</ul>
+
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

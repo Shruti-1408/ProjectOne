@@ -6,6 +6,9 @@
 			margin:0;
 			padding:0;
 		}
+		body{
+			background-color:#828485;
+		}
 		#main{
 			height:100px;
 			width:100%;
@@ -43,12 +46,44 @@
 					height:60px;
 					margin-top:10px;
 				}
-		#main ul li img{
-					color:white;
+		#cont{
+				width:100%;
+				height:100px;
+				background-color:#f2f2f2;
+							
 			}
-		button{
-					width:50px;
-		}
+		#cont ul{
+				display:flex;
+				list-style-type:none;
+				font-family:arial;
+				
+			}
+		#cont ul li{
+				margin:30px;
+				padding-top:10px;
+				
+			}
+		#cont ul li:hover{
+					color:blue;
+				}
+		#cont ul li ul{
+					display:none;
+			}
+		#cont ul li:hover ul{
+					display:block;
+					position:absolute;
+				}
+		#cont ul li:hover ul li{
+						float:none;
+						color:#f2f2f2;
+					}
+		#box{
+			height:490px;
+			width:700px;
+			background:orange;
+			margin-top:10px;
+			margin-left:250px;		
+		 }
 
 		</style>
 	</head>
@@ -57,13 +92,128 @@
 			<ul>
 				<li><a href="#"><img src="fll.svg"></a></li>
 				<li><input type="text"placeholder="search for products brands and more"></li>
-				<li><button>login</button></li>
+				<li>login</li>
 				<li><a href="#">Become a seller</a></li>
 				<li><a href="#">more</a></li>
 				<li><a href="#"><img src="cart.svg">cart</a></li>
 
 
 			</ul>
+		</div>
+		<div id="cont">
+			<ul>
+				<li>Electronics
+					<ul>
+						<li>Mobiles</li>
+						<li>realme</li>
+						<li>Samsung</li>
+						<li>Redmi</li>
+						<li>oppo</li>
+
+
+
+
+					</ul>
+				</li>
+				<li>TV & Applications
+					<ul>
+						<li>Samsung</li>
+						<li>LG</li>
+						<li>Realme</li>
+						<li>Motorola</li>
+						<li>nokia</li>
+
+
+
+
+					</ul>
+
+				</li>
+				<li>Men
+					<ul>
+						<li>shoes</li>
+						<li>clothes</li>
+						<li>googles</li>
+						<li>watch</li>
+						<li>jeans</li>
+
+
+
+
+					</ul>
+
+				</li>
+				<li>Women
+					<ul>
+						<li>Dresses</li>
+						<li>footwear</li>
+						<li>jeans</li>
+						<li>fashion</li>
+						<li>top</li>
+
+
+
+
+					</ul>
+
+				</li>
+				<li>Baby & Kids
+					<ul>
+						<li>dress</li>
+						<li>Toys</li>
+						<li>Jeans</li>
+						<li>ball</li>
+						<li>googles</li>
+
+
+
+
+					</ul>
+
+				</li>
+				<li>Home & Furniture
+					<ul>
+						<li>Sofa</li>
+						<li>Tables</li>
+						<li>Doors</li>
+						<li>Apartment</li>
+						<li>Covers</li>
+
+
+
+
+					</ul>
+
+				</li>
+				<li>Sports,Books & More
+					<ul>
+						<li>sport shoes</li>
+						<li>story book</li>
+						<li>hills</li>
+						<li>writer book</li>
+						<li>western dress</li>
+
+
+
+
+					</ul>
+
+				</li>
+				<li>Flights</li>
+				<li>Offer Zone</li>
+
+
+
+
+
+
+
+
+			</ul>
+			
+		</div>
+		<div id="box">
+			
 		</div>
 	</body>
 </html>

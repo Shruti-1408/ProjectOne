@@ -79,26 +79,26 @@
 					}
 		#right{
 				width:1200px;
-				height:900px;
+				height:1400px;
 				float:right;		
 				border:1px solid white;
 				background:#F5F5F5;
 				margin:10px;
 				
 		}
-		#right span{
+		.top span{
 				margin-left:10px;
 				margin-top:15px;
 			}
-		#right img{
+		.top img{
 				height:6px;
 				width:13px;
 			}
 		
-		#right span:hover{
+		.top span:hover{
 					color:blue;
 				}
-		#right p{
+		.top p{
 				margin-left:10px;
 				margin-top:10px;
 			}
@@ -108,6 +108,35 @@
 		.part{
 				margin-top:10px;
 		}
+		.part span{
+				margin-left:10px;
+				margin-top:15px;
+
+			}
+		.part span:hover{
+					color:blue;
+				}
+		.load{
+				width:1180px;
+				height:300px;
+				border:1px solid black;
+				margin:10px;
+		}
+		.loader img{
+				width:200px;
+				height:120px;
+				margin:25px;
+			}
+		.check{
+				margin-left:10px;
+		}
+		.cl{
+				display:flex;						
+		}
+		.input{
+				display:flex;		
+		}
+		
 
 		#left{
 				width:280px;
@@ -308,11 +337,13 @@
 		</div>
 		<div id="head">
 			<div id="right">
-				<span>Home<img src="nt.png"></span>
-				<span>Home& kitchen<img src="nt.png"></span>
-				<span>Kitchen appliances<img src="nt.png"></span>
-				<span>microwaves</span>
-				<p>Convection Microwaves<span class="spp">(Showing 1 – 24 products of 25 products)</span></p>
+				<div class="top">
+					<span>Home<img src="nt.png"></span>
+					<span>Home& kitchen<img src="nt.png"></span>
+					<span>Kitchen appliances<img src="nt.png"></span>
+					<span>microwaves</span>
+					<p>Convection Microwaves<span class="spp">(Showing 1 – 24 products of 25 products)</span></p>
+				</div>
 				<div class="part">
 					<span>Sort By</span>
 					<span>popularity </span>
@@ -320,17 +351,27 @@
 					<span>Price low to high</span>
 					<span>Newest First</span>
 					<span>Discount</span>
-
-
-
-
-
 				</div>
-				<div class="content">
-					<div class="image">
+				<div class="load">
+					<div class="loader">
 						<img src="magn.webp">
 					</div>
+					<div class="check">
+						<input type="checkbox">Add to compare
+					</div>
+					<div class="cl">
+						<div class="input">
+							<img src="heas.png"height="15px"width="10px">Sponserd
+							<p>microwave</p>
+							<p>fifty discount</p>
+						</div>
+					</div>
+				
+					
 				</div>
+				
+				
+				
 			</div>
 			<div id="left">
 				<h3>Filters</h3>

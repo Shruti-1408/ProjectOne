@@ -9,46 +9,68 @@
 		body{
 			background-color:#828485;
 		}
-		#main{
-			height:100px;
+		
+				
+		
+
+
+
+		
+				
+		#nav{
+			background:#26779B;
+			height:80px;
 			width:100%;
-			background-color:#26779B;
-		   }
-		#main ul li{
-				float:left;
+			display:flex;
+			margin-bottom:10px;
+			position:sticky;
+			top:0;
+			
+		  }
+		.image{
+			padding-top:20px;
+			padding-right:25px;
+		}
+		#nav ul{
 				list-style-type:none;
+				display:flex;								
+			}
+		.search input{
+				width:800px;
+				height:50px;
 				margin-top:10px;
-				padding-left:30px;
-				color:white;
-				padding-top:10px;
+			}
+		.search input:hover{
+				background:pink;
+				border:solid 2px black;
 				
 			}
-		
-		#main ul li a:link{
+		.prod{
+				margin-right:50px;
+				margin-top:10px;
+				padding-left:10px;
+		}
+	
+		.prod:hover{
+				color:blue;
+		}
+		#nav ul li a:link{
 					color:white;
 					text-decoration:none;
 			  }
-		#main ul li a:visited{
+		#nav ul li a:visited{
 					color:white;
 					text-decoration:none;
 			  }
-		#main ul li a:hover{
+		#nav ul li a:hover{
 					color:yellow;
 			  }
-		#main ul li a:active{
+		#nav ul li a:active{
 					color:pink;
 			  }
-
-
-
-		#main ul li input{
-					width:800px;
-					height:60px;
-					margin-top:10px;
-				}
 		#cont{
 				width:100%;
-				height:100px;
+				height:80px;
 				background-color:#f2f2f2;
 							
 			}
@@ -178,17 +200,20 @@
 		</style>
 	</head>
 	<body>
-		<div id="main">
-			<ul>
-				<li><a href="#"><img src="fll.svg"></a></li>
-				<li><input type="text"placeholder="search for products brands and more"></li>
-				<li>login</li>
-				<li><a href="#">Become a seller</a></li>
-				<li><a href="#">more</a></li>
-				<li><a href="#"><img src="cart.svg">cart</a></li>
+		<div id="nav">
+			<div class="image"><img src="fll.svg"></div>
+
+				<ul>
+					<li class="search"><input type="text"placeholder="search for products,brands and more"></li>
+					<li class="prod"><a href="#">login</a></li>
+					<li class="prod"><a href="#">Become a seller</a></li>
+					<li class="prod"><a href="#">More</a></li>
+					<li class="prod"><a href="#"><img src="cart.svg"title="cart">cart</a></li>
 
 
-			</ul>
+
+				</ul>
+			
 		</div>
 		<div id="cont">
 			<ul>

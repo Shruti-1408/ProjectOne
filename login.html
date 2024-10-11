@@ -80,6 +80,48 @@
 				font-family:arial;
 				
 			}
+		.d{
+				float:left;
+				overflow:hidden;
+		}
+		.d .d-btn{
+				font-size:14px;
+				border:none;
+				outline:none;
+				padding:14px 16px;
+				margin:15px;
+				color:yellow;
+				background:purple;
+				
+			}
+		
+		.d-content{
+				display:none;
+				position:absolute;
+				background:white;
+				width:100%;
+				left:0;
+				z-index:10;
+			}
+		.d:hover .d-content{
+					display:block;
+				}
+		.column{
+				float:left;
+				width:33%;
+				height:290px;
+				background:green;
+		}
+		.column a{
+				display:block;
+				float:none;
+				color:pink;
+				text-align:left;
+			}
+		.column h3{
+				padding:10px;
+				color:white;
+			}
 		#cont ul li{
 				margin:30px;
 				padding-top:10px;
@@ -225,20 +267,40 @@
 		</div>
 		<div id="cont">
 			<ul>
-				<li>Electronics
-					<ul>
-						<li title="mobile">Mobiles and realme applications</li>
-						<li title="realme">realme</li>
-						<li title="samsung">Samsung</li>
-						<li title="redmi">Redmi</li>
-						<li title="oppo">oppo</li>
-						
+				<div class="d">
+					<button class="d-btn">Electronics</button>
+					<div class="d-content">
+						<div class="row">
+							<div class="column">
+								<h3>category</h3>
+								<a href="#">mi</a>
+								<a href="#">realme</a>
+								<a href="#">smartphone</a>
 
 
+							</div>
+							<div class="column">
+								<h3>category2</h3>
+								<a href="#">nokia</a>
+								<a href="#">motorola</a>
+								<a href="#">vivo</a>
 
 
-					</ul>
-				</li>
+							</div>
+							<div class="column">
+								<h3>category3</h3>
+								<a href="#">redme</a>
+								<a href="#">iphone</a>
+								<a href="#">one plus</a>
+
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+									
 				<li>TV & Applications
 					<ul>
 						<li title="samsung">Samsung</li>

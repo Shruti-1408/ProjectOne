@@ -9,43 +9,58 @@
 		body{
 			background-color:#E0E0E0;
 		}
-		#main{
-			height:100px;
+		#nav{
+			background:#26779B;
+			height:80px;
 			width:100%;
-			background-color:#26779B;
-		   }
-		#main ul li{
-				float:left;
+			display:flex;
+			margin-bottom:10px;
+			position:sticky;
+			top:0;
+			
+		  }
+		.image{
+			padding-top:20px;
+			padding-right:25px;
+		}
+		#nav ul{
 				list-style-type:none;
+				display:flex;								
+			}
+		.search input{
+				width:800px;
+				height:50px;
 				margin-top:10px;
-				padding-left:30px;
-				color:white;
-				padding-top:10px;
+			}
+		.search input:hover{
+				background:pink;
+				border:solid 2px black;
 				
 			}
-		
-		#main ul li a:link{
+		.prod{
+				margin-right:50px;
+				margin-top:10px;
+				padding-left:10px;
+		}
+	
+		.prod:hover{
+				color:blue;
+		}
+		#nav ul li a:link{
 					color:white;
 					text-decoration:none;
 			  }
-		#main ul li a:visited{
+		#nav ul li a:visited{
 					color:white;
 					text-decoration:none;
 			  }
-		#main ul li a:hover{
+		#nav ul li a:hover{
 					color:yellow;
 			  }
-		#main ul li a:active{
+		#nav ul li a:active{
 					color:pink;
 			  }
 
-
-
-		#main ul li input{
-					width:800px;
-					height:60px;
-					margin-top:10px;
-				}
 		#cont{
 				width:100%;
 				height:100px;
@@ -56,6 +71,7 @@
 				display:flex;
 				list-style-type:none;
 				font-family:arial;
+				
 				
 			}
 		#cont ul li{
@@ -72,15 +88,18 @@
 		#cont ul li:hover ul{
 					display:block;
 					position:absolute;
+					background:green;
+					color:white;
 				}
 		#cont ul li:hover ul li{
 						float:none;
-						color:#4B4B4B;
+						color:white;
 					}
 		#contain{
 				width:1480px;
-				height:1300px;
+				height:1100px;
 				margin:10px;
+				margin-bottom:20px;
 			}
 		.sec{
 				display:flex;
@@ -91,37 +110,82 @@
 				margin-right:50px;
 				margin-left:50px;
 			}
+		.left{
+				
+				margin:10px;
+				display:flex;
+		}
+		.right{
+				height:200px;
+				width:470px;
+				margin:10px;
+		}
+		#footer{
+				height:600px;
+				background:#0E0E0E;
+				display:flex;
+				color:white;
+				margin-top:10px;
+			}
+		#footer h2{
+				color:#258C81;
+				padding-left:30px;
+				padding-top:30px;
+			}
+		#footer h2:hover{
+					color:pink;
+				}
+
+		#footer ul li{
+				list-style-type:none;
+				line-height:50px;
+			}
+		.foot{
+				padding-right:60px;
+				padding-left:10px;
+								
+		  }
+		.foot:hover{
+				color:yellow;
+				text-decoration:underline;
+			}
+
+
 
 		</style>
 	</head>
 	<body>
-		<div id="main">
-			<ul>
-				<li><a href="#"><img src="fll.svg"></a></li>
-				<li><input type="text"placeholder="search for products brands and more"></li>
-				<li>login</li>
-				<li><a href="#">Become a seller</a></li>
-				<li><a href="#">more</a></li>
-				<li><a href="#"><img src="cart.svg">cart</a></li>
+		<div id="nav">
+			<div class="image"><img src="fll.svg"></div>
+
+				<ul>
+					<li class="search"><input type="text"placeholder="search for products,brands and more"></li>
+					<li class="prod"><a href="#">login</a></li>
+					<li class="prod"><a href="#">Become a seller</a></li>
+					<li class="prod"><a href="#">More</a></li>
+					<li class="prod"><a href="#"><img src="cart.svg"title="cart">cart</a></li>
 
 
-			</ul>
+
+				</ul>
+			
 		</div>
-		<div id="cont">
-			<ul>
-				<li>Electronics
+
+				<div id="cont">
 					<ul>
-						<li title="mobile">Mobiles</li>
-						<li title="realme">realme</li>
-						<li title="samsung">Samsung</li>
-						<li title="redmi">Redmi</li>
-						<li title="oppo">oppo</li>
+						<li>Electronics
+							<ul>
+								<li title="mobile">Mobiles</li>
+								<li title="realme">realme</li>
+								<li title="samsung">Samsung</li>
+								<li title="redmi">Redmi</li>
+								<li title="oppo">oppo</li>
 
 
 
 
-					</ul>
-				</li>
+							</ul>
+						</li>
 				<li>TV & Applications
 					<ul>
 						<li title="samsung">Samsung</li>
@@ -221,26 +285,111 @@
 		</div>
 		<div id="contain">
 			<h2>THE BIG BILLIONS DAY</h2>
-			<img src="cnn.avif" width="100%">
-			<div class="sec">
-				<img src="mobp.webp"height="20%"width="40%">
-				<img src="tv.webp"height="20%"width="40%">
-				<img src="wave.jpeg"height="20%"width="40%">
-				<img src="mobile.webp"height="20%"width="40%">
-
-				
+			<img src="cnn.avif" width="100%"height="100%">
+			
+		</div>
+		<div class="left">
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
 			</div>
-			<div class="sec">
-				<img src="mobp.webp"height="20%"width="40%">
-									
-				<img src="tv.webp"height="20%"width="40%">
-				<img src="wave.jpeg"height="20%"width="40%">
-				<img src="mobile.webp"height="20%"width="40%">
-
-				
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
 			</div>
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
+			</div>
+
 
 		</div>
+		<div class="left">
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
+			</div>
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
+			</div>
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
+			</div>
+
+
+		</div>
+		<div class="left">
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
+			</div>
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
+			</div>
+			<div class="right">
+				<img src="real.webp"width="100%"height="100%">
+			</div>
+
+
+		</div>
+		<div id="footer">
+			<div class="foot">
+
+				<h2>About</h2>
+				<ul>
+					<li>CONTACT US</li>
+					<li>ABOUT US</li>
+					<li>FLIPKART SHOPPING</li>
+					<li>CORPORATION INFORMATION</li>
+					<li>ITEMS AVAILABLE</li>
+
+
+
+
+				</ul>
+			</div>
+			
+			<div class="foot">
+				<h2>Group Companies</h2>
+				<ul>
+					<li>MYNTRA</li>
+					<li>CLEARTRIP</li>
+					<li>SHOPSY</li>
+					<li>MEESHO</li>
+					<li>PURPLE</li>
+
+
+				</ul>
+			</div>
+			<div class="foot">
+
+				<h2>Help</h2>
+				<ul>
+					<li>PAYMENTS</li>
+					<li>SHIPPING</li>
+					<li>CANCELLATION AND RETURNS</li>
+					<li>FAQ</li>
+					<li>REPORT INFRINGEMENT</li>
+
+
+				</ul>
+
+			</div>
+			<div class="foot">
+
+				<h2>Consumer Policy</h2>
+				<ul>
+					<li>SECURITY</li>
+					<li>PRIVACY</li>
+					<li>PAYMENTS</li>
+					<li>CANCELLATION AND RETURNS</li>
+					<li>TERMS OF USE</li>
+
+
+				</ul>
+
+			</div>
+			
+
+		</div>
+
+
+
 
 	</body>
 </html>

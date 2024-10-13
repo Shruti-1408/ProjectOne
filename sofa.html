@@ -1,51 +1,73 @@
 <html>
 	<head>
-		<title>tv and application</title>
+		<title>Login page</title>
 		<style>
-			*{
+		*{
 			margin:0;
 			padding:0;
 		}
 		body{
-			background-color:#E0F7FA;
+			background-color:#828485;
 		}
-		#main{
-			height:100px;
+		
+				
+		
+
+
+
+		
+				
+		#nav{
+			background:#26779B;
+			height:80px;
 			width:100%;
-			background-color:#26779B;
-		   }
-		#main ul li{
-				float:left;
+			display:flex;
+			margin-bottom:10px;
+			position:sticky;
+			top:0;
+			
+		  }
+		.image{
+			padding-top:20px;
+			padding-right:25px;
+		}
+		#nav ul{
 				list-style-type:none;
+				display:flex;								
+			}
+		.search input{
+				width:800px;
+				height:50px;
 				margin-top:10px;
-				padding-left:30px;
-				color:white;
-				padding-top:10px;
+			}
+		.search input:hover{
+				background:pink;
+				border:solid 2px black;
 				
 			}
-		
-		#main ul li a:link{
+		.prod{
+				margin-right:50px;
+				margin-top:10px;
+				padding-left:10px;
+		}
+	
+		.prod:hover{
+				color:blue;
+		}
+		#nav ul li a:link{
 					color:white;
 					text-decoration:none;
 			  }
-		#main ul li a:visited{
+		#nav ul li a:visited{
 					color:white;
 					text-decoration:none;
 			  }
-		#main ul li a:hover{
+		#nav ul li a:hover{
 					color:yellow;
 			  }
-		#main ul li a:active{
+		#nav ul li a:active{
 					color:pink;
 			  }
-
-
-
-		#main ul li input{
-					width:800px;
-					height:60px;
-					margin-top:10px;
-				}
 		#cont{
 				width:100%;
 				height:100px;
@@ -77,47 +99,59 @@
 						float:none;
 						color:#4B4B4B;
 					}
-		#para{
-			margin-bottom:20px;
-		}
-		p a{
-			text-decoration:none;
-		}
-		#img{
-			height:242px;
-			width:1450px;
-			margin:10px;
-			border:2px solid black;
-		}
-		#images{
-				height:200px;
-				width:1450px;
-				margin:20px;
-		}
-		#contain{
+		#header{
 				height:300px;
-				width:1450px;
+				width:1470px;
 				margin:10px;
-				border:2px solid white;
-
-			}
-		.left{
-				margin:10px;
-				display:flex;
-		}
-		.right{
-				height:200px;
-				width:470px;
-				margin:10px;
-		}
-		#top{
-				height:300px;
-				width:1450px;
-				margin:10px;
-				border:2px solid white;
+				
 
 		}
 		
+		h2{
+			padding-left:20px;
+		}
+		.head{
+				height:290px;
+				width:1470px;
+				margin:10px;
+				border:1px solid grey;
+				background:white;
+								
+		}
+		.left{
+				float:left;
+				
+		}
+		.left:hover{
+				transform:scale(1.2,1.2);
+			}
+
+		
+		.left img{
+				padding-left:35px;
+				padding-right:35px;
+				width:126px;
+				height:150px;
+				padding-top:30px;
+							
+			}
+		.left p{
+				padding-left:20px;
+				line-height:30px;
+				
+				
+				
+		}
+		.para{
+				color:green;
+		}
+		.mid{
+				height:290px;
+				width:1470px;
+				margin:10px;
+				border:1px solid grey;
+				background:white;
+		}
 		#footer{
 				height:600px;
 				background:#0E0E0E;
@@ -152,17 +186,20 @@
 		</style>
 	</head>
 	<body>
-		<div id="main">
-			<ul>
-				<li><a href="#"><img src="fll.svg"></a></li>
-				<li><input type="text"placeholder="search for products brands and more"></li>
-				<li>login</li>
-				<li><a href="#">Become a seller</a></li>
-				<li><a href="#">more</a></li>
-				<li><a href="#"><img src="cart.svg">cart</a></li>
+		<div id="nav">
+			<div class="image"><img src="fll.svg"></div>
+
+				<ul>
+					<li class="search"><input type="text"placeholder="search for products,brands and more"></li>
+					<li class="prod"><a href="#">login</a></li>
+					<li class="prod"><a href="#">Become a seller</a></li>
+					<li class="prod"><a href="#">More</a></li>
+					<li class="prod"><a href="#"><img src="cart.svg"title="cart">cart</a></li>
 
 
-			</ul>
+
+				</ul>
+			
 		</div>
 		<div id="cont">
 			<ul>
@@ -276,62 +313,117 @@
 			</ul>
 			
 		</div>
-		<h3>Mobiles Big Billion Days 2024</h3>
-		<p id="para">Mobile phones are no more merely a part of our lives. Whether it's to stay connected with friends and family or to keep abreast of important developments around the world, mobiles are no longer for sending a text or making a call. From budget to state-of-the-art smartphones; indigenous names to global big-wigs - a whole universe of mobiles await you on Flipkart. Whether you’re looking for waterdrop notch screens, a high screen to body ratio, AI-powered sensational cameras, high storage capacity, blazing quick processing engines or reflective glass designs, rest assured you won’t have to venture anywhere else for your smartphone needs. The information you are reading has been last updated on 04-Oct-24. 
-<a href="#">iPhone 15 | iPhone 15 Plus | iPhone 15 Pro | iPhone 15 Pro Max | Vivo x 100 | OPPO Reno 11 | Xiaomi 14 CIVI | Infinix Note 40 5G | Pixel 7a | Moto Edge 40 | POCO C55 | Samsung Galaxy S24 5G | Motorola g04s</a></p>
+		<div id="header">
+		<h2>Sale is live</h2>
+		<img src="real.webp"width="100%"height="90%">
+		</div>
+			<h2>LIVING ROOM FURNITURE</h2>
+			<div class="head">
+				<div class="left">
+				
+					<img src="wardrow.webp"title="cubord">
+					<p><b>good furniture</b></p>
+					<p class="para">upto 70% off</p>
+				</div>
+				<div class="left">
 
-		<p>Also Check out the <a href="#">Exchange offers on Mobile Phone. </a></p>
-		<div id="img">
-			<img src="sc.webp"width="100%"height="100%">
+					<img src="beds.webp"title="beds">
+					<p><b>bed</b></p>
+					<p class="para">upto 65% off</p>
+				</div>
+				<div class="left">
+
+					<img src="drawers.webp"title="drawer">
+					<p><b>drawers</b></p>
+					<p class="para">upto 85% off</p>
+				</div>
+				<div class="left">
+
+					<img src="dining.webp"title="dining">
+					<p><b>dining</b></p>
+					<p class="para">upto 55% off</p>
+				</div>
+				<div class="left">
+
+					<img src="dry.webp"title="dry fruits">
+					<p><b>Dry fruits</b></p>
+					<p class="para">upto 50% off</p>
+				</div>
+				<div class="left">
+
+					<img src="car.webp"title="gold tea">
+					<p><b>gaming car</b></p>
+					<p class="para">upto 69% off</p>
+				</div>
+				<div class="left">
+
+					<img src="pet.webp"title="dog food">
+					<p><b>Pet dog foods</b></p>
+					<p class="para">upto 75% off</p>
+				</div>
 			
-		</div>
-		<div id="images">
-			<img src="cam.webp"width="100%"height="100%">
-		</div>
-		<div id="contain">
-			<img src="infinix.webp"width="100%"height="100%">
-		</div>
-		<div class="left">
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
-			</div>
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
-			</div>
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
-			</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 		</div>
-		<div class="left">
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
+		<h2>BOOKS AND MEDIA</h2>
+		<div class="mid">
+			<div class="left">
+				
+				<img src="he.webp"title="from 299">
+				<p><b>Top rated microphones</b></p>
+				<p class="para">from rs 299</p>
 			</div>
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
+			<div class="left">
+
+				<img src="guitar.webp"title="Upto 75% off">
+				<p><b>Guitar,mics keyboard</b></p>
+				<p class="para">upto 75% off</p>
 			</div>
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
+			<div class="left">
+
+				<img src="tab.webp"title="from 99">
+				<p><b>Tabla,Dholak and more</b></p>
+				<p class="para">From rs 99</p>
 			</div>
+			<div class="left">
+
+				<img src="mic.webp"title="Upto 70% off">
+				<p><b>Guitar,mics keyboard</b></p>
+				<p class="para">upto 70% off</p>
+			</div>
+			<div class="left">
+
+				<img src="key.webp"title="Upto 40% off">
+				<p><b>Top musical keyboards</b></p>
+				<p class="para">upto 40% off</p>
+			</div>
+			<div class="left">
+
+				<img src="books.webp"title="from 49">
+				<p><b>Self Help Books</b></p>
+				<p class="para">From rs 49</p>
+			</div>
+			<div class="left">
+
+				<img src="bha.webp"title="from 49">
+				<p><b>Fiction Books</b></p>
+				<p class="para">From rs 49</p>
+			</div>
+			
 
 
-		</div>
-		<div class="left">
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
-			</div>
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
-			</div>
-			<div class="right">
-				<img src="real.webp"width="100%"height="100%">
-			</div>
 
-
-		</div>
-		<div id="top">
-			<img src="real.webp"width="100%"height="100%">
 		</div>
 		<div id="footer">
 			<div class="foot">
@@ -394,10 +486,7 @@
 
 		</div>
 
-		
-
 
 
 	</body>
-	
 </html>

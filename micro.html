@@ -231,6 +231,17 @@
 				padding-top:10px;
 
 		}
+		.value .input ul{
+					display:none;
+				}
+		.value .input ul li:hover ul{
+					display:block;
+					position:absolute;
+				}
+		.value .input ul li:hover ul li{
+							float:none;
+					}
+
 		.values{
 				width:253px;
 				height:51px;
@@ -721,10 +732,12 @@
 				<div class="value">
 					<p><b>BRAND</b>
 						<div class="input">
-							<input type="checkbox">fashion
-							<input type="checkbox">men wear
-							<input type="checkbox">women wear
-							<input type="checkbox">toys
+							<ul>
+								<li><input type="checkbox">fashion</li>
+								<li><input type="checkbox">men wear</li>
+								<li><input type="checkbox">women wear</li>
+								<li><input type="checkbox">toys</li>
+							</ul>
 
 
 
